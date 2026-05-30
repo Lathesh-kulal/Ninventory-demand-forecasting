@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Predict Sales</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="container">
+<h1>Predict Weekly Sales</h1>
+<form action="/result" method="POST">
+<input type="number" name="store" placeholder="Store ID" required>
+<input type="number" name="holiday" placeholder="Holiday Flag (0 or 1)"
+required>
+<input type="text" name="temperature" placeholder="Temperature" required>
+<input type="text" name="cpi" placeholder="CPI" required>
+</form>
+</div>
+<input type="text" name="fuel_price" placeholder="Fuel Price" required>
+<input type="text" name="unemployment" placeholder="Unemployment" required>
+<input type="number" name="day" placeholder="Day" required>
+<input type="number" name="month" placeholder="Month" required>
+<input type="number" name="year" placeholder="Year" required>
+<button type="submit">Predict</button>
+</body>
+</html>
